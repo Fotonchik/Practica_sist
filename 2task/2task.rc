@@ -1,0 +1,8 @@
+#include "resource.h"
+menudemo MENU
+{
+	POPUP "Главное окно" {
+		MENUITEM "Штриховка" , MI_BLUE
+		MENUITEM "Сплошное", MI_hatch
+	}
+}
