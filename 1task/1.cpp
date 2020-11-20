@@ -1,4 +1,4 @@
-﻿#include<Windows.h>
+#include<Windows.h>
 #include<Windowsx.h>
 #include<tchar.h>
 
@@ -31,7 +31,7 @@ int APIENTRY _tWinMain(HINSTANCE This, //Дескриптор текущего �
 	if (!RegisterClass(&wc)) return 0;//Регистрация класса окна
 	//Создание окна
 	hWnd = CreateWindow(WinName,//Имя класса окна
-		_T("Каркас Windows-приложения"),//Заголовок окна
+		_T("Задание А12"),//Заголовок окна
 		WS_OVERLAPPEDWINDOW, //Стиль окна
 		CW_USEDEFAULT,//x
 		CW_USEDEFAULT,//y Размеры окна
@@ -58,7 +58,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	PAINTSTRUCT ps;
 	HDC hdc;
-	
+
+	HPEN hPen;
 	switch (message)
 	{
 	case WM_CREATE:
@@ -67,7 +68,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break;
 	case WM_PAINT:
 		hdc = BeginPaint(hWnd, &ps); 
-		SelectPen(hdc, hYellowBrush);
+		SelectPen(hdc, hYellowBrush); 
+		hPen = CreatePen(PS_SOLID, 1, RGB(130, 200, 250));
+		SelectObject(hdc, hPen);
 		Ellipse(hdc, 10, 10, 200, 200);
 		SelectPen(hdc, hBlueBrush);
 		Ellipse(hdc, 130, 40, 230, 130);
