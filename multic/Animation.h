@@ -2,14 +2,14 @@
 #include<Windows.h>
 #include<tchar.h>
 
-class ObjAnim {
+class Anim {
 public:
 	HBITMAP hBitmap;
 	HDC memBit;
 	BITMAP bm;
-	ObjAnim(){}
+	Anim(){}
 
-	ObjAnim(LPCWSTR name, HDC hdc)
+	Anim(LPCWSTR name, HDC hdc)
 	{
 		this->hBitmap = (HBITMAP)LoadImage(NULL, name, IMAGE_BITMAP,
 			0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);

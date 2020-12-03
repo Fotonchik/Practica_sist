@@ -1,6 +1,5 @@
 ﻿#include<Windows.h>
 #include<tchar.h>
-#include "resource.h"
 #include "Animation.h" 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 TCHAR WinName[] = _T("MainFrame");
@@ -57,16 +56,16 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	PAINTSTRUCT ps;
 	HDC hdc;
-	static ObjAnim asphalt;
-	static ObjAnim Car;
+	static Anim asphalt;
+	static Anim Car;
 	static int t = 0;
 	switch (message)
 	{
 	case WM_CREATE:
 		SetTimer(hWnd, 10, 100, NULL);
 		hdc = GetDC(hWnd);
-		asphalt = ObjAnim(_T("bitmap1.bmp"), hdc);
-		Car = ObjAnim(_T("bitmap2.bmp"), hdc);
+		asphalt = Anim(_T("bitmap1.bmp"), hdc);
+		Car = Anim(_T("bitmap2.bmp"), hdc);
 		ReleaseDC(hWnd, hdc);
 		break;
 	case WM_TIMER:
