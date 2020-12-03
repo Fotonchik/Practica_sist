@@ -1,0 +1,4 @@
+﻿  4.cpp
+C:\Users\kolgn\Desktop\Программы\4task\4task\4.cpp(89,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\kolgn\Desktop\Программы\4task\4task\4.cpp(89,18): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  4task.vcxproj -> C:\Users\kolgn\Desktop\Программы\4task\Debug\4task.exe
