@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Dialogs.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  3.cpp
+C:\Users\kolgn\Desktop\Программы\Dialogs\Dialogs\resource.h(4,1): warning C4005: IDCANCEL: изменение макроопределения
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winuser.h(11109): message : см. предыдущее определение "IDCANCEL"
+resource.h(4): warning RC4005: 'IDCANCEL' : redefinition
+  
+  Dialogs.vcxproj -> C:\Users\kolgn\Desktop\Программы\Dialogs\Debug\3.exe
