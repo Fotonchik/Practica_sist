@@ -2,7 +2,7 @@
 #include "7.h"
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
-char szAppName[] = "edit";
+char szAppName[] = "7";
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 	HWND hwnd;
 	WNDCLASSEX wndclass;
